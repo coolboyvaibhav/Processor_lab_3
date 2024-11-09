@@ -1,0 +1,504 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass desearticle
+\begin_preamble
+\Author{Student A, Student B}
+\Afil{DESE, IISc}
+\Journal{Mechatronic Systems Design}
+\Month{Aug-Dec}
+\Year{2021}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding default
+\font_roman "times" "default"
+\font_sans "helvet" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size huge
+Exercise 1
+\end_layout
+
+\begin_layout Title
+Modelling
+\end_layout
+
+\begin_layout Author
+Ankit Verma, DESE, IISc, Bangalore
+\end_layout
+
+\begin_layout Section*
+Answer for system A:
+\end_layout
+
+\begin_layout Standard
+Let us consider the mass is M, coefficient of spring stiffness is k and
+ coefficient of damper is b.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img11.png
+	lyxscale 50
+	scale 60
+	BoundingBox 0bp 0bp 340bp 595bp
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+System A
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Answer 1:
+\end_layout
+
+\begin_layout Standard
+Energy Variables
+\end_layout
+
+\begin_layout Enumerate
+M
+\end_layout
+
+\begin_layout Enumerate
+k
+\end_layout
+
+\begin_layout Enumerate
+b
+\end_layout
+
+\begin_layout Subsection*
+Answer 2:
+\end_layout
+
+\begin_layout Standard
+List of state variables
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Answer 3:
+\end_layout
+
+\begin_layout Standard
+State equations
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Formula $\frac{dx_{1}}{dx}=x_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+or
+\begin_inset Formula $\dot{x}_{1}=x_{2}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Equation1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\frac{d^{2}x_{1}}{dx^{2}}+b\frac{dx_{1}}{dx}+kx_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula $\frac{d^{2}x_{1}}{dx^{2}}+\frac{b}{M}\frac{dx_{1}}{dx}+\frac{k}{M}x_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula $\frac{dx_{2}}{dx}+\frac{b}{M}\frac{dx_{1}}{dx}+\frac{k}{M}x_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula $\frac{dx_{2}}{dx}=-\frac{b}{M}\frac{dx_{1}}{dx}-\frac{k}{M}x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or
+\begin_inset Formula $\dot{x}_{2}=-\frac{b}{M}\dot{x}_{1}-\frac{k}{M}x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Answer for system B:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img22.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+System B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Answer 1:
+\end_layout
+
+\begin_layout Standard
+Energy Variables
+\end_layout
+
+\begin_layout Subsection*
+Answer 2:
+\end_layout
+
+\begin_layout Standard
+List of state variables
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V_{C1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $V_{C2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Answer 3:
+\end_layout
+
+\begin_layout Standard
+State equation
+\end_layout
+
+\begin_layout Standard
+Applying KVL in Loop i1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{1}-i_{1}R_{1}-L_{1}\frac{di_{1}}{dt}-V_{C_{1}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{di_{1}}{dt}=\frac{V_{1}}{L_{1}}-\frac{V_{C_{1}}}{L_{1}}-\frac{i_{1}R_{1}}{L_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\dot{i}_{1}=\frac{V_{1}}{L_{1}}-\frac{V_{C_{1}}}{L_{1}}-\frac{i_{1}R_{1}}{L_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At node Vc1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{C_{1}}=\frac{1}{C_{1}}\int(i_{1}-i_{2})dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+differentiating both side with respect to 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dV_{C_{1}}}{dt}=\frac{i_{1}}{C_{1}}-\frac{i_{2}}{C_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Applying KVL in Loop i2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{C_{1}}-i_{2}R_{2}-L_{2}\frac{di_{2}}{dt}-V_{C_{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{di_{2}}{dt}=\frac{V_{C_{1}}}{L_{2}}-\frac{V_{C_{2}}}{L_{2}}-\frac{i_{2}R_{2}}{L_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At node Vc2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V_{C_{2}}=\frac{1}{C_{2}}\int(i_{2}-i_{3})dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+differentiating both side with respect to 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dV_{C_{2}}}{dt}=\frac{i_{2}}{C_{2}}-\frac{i_{3}}{C_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dV_{C_{2}}}{dt}=\frac{i_{2}}{C_{2}}-\frac{V_{C_{2}}}{R_{3}C_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Answer for system C:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename img3.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+System C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Answer 1:
+\end_layout
+
+\begin_layout Standard
+Energy Variables
+\end_layout
+
+\begin_layout Subsection*
+Answer 2:
+\end_layout
+
+\begin_layout Standard
+List of state variables
+\end_layout
+
+\begin_layout Subsection*
+Answer 3:
+\end_layout
+
+\begin_layout Standard
+State equation
+\end_layout
+
+\end_body
+\end_document

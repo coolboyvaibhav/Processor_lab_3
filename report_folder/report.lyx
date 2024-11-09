@@ -1,0 +1,730 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass desearticle
+\begin_preamble
+\Author{Student A, Student B}
+\Afil{DESE, IISc}
+\Journal{Mechatronic Systems Design}
+\Month{Aug-Dec}
+\Year{2021}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding default
+\font_roman "times" "default"
+\font_sans "helvet" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size huge
+Assignment title
+\end_layout
+
+\begin_layout Abstract
+The abstract section gives the key take-away of the experiment.
+ Do not confuse abstract with the conclusion section.
+ The abstract is a summary of the article indicating the most important
+ point that is addressed.
+ Abstract provides the motivation, aim and scope of the experiment.
+ Whereas, the conclusion section provides an authors' insight on the experiment.
+ It gives the thoughts of the authors on the results, discrepancy in results
+ with respect to theory, any means for addressing the discrepancies, any
+ interesting and novel applications that can be considered as spin-offs
+ from this experiment, so on and so forth.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+This section provides an introduction to the experiment.
+ Discuss the need for the experiment and how it will be executed? What will
+ be learned from this experiment? What are the necessary background literature
+ that you have referred? In this section you will include citation to the
+ references like datasheets, papers, articles, notes etc.
+ Build up you list of references in a .bib file in bibtex format.
+ Load the bibtex into the 
+\begin_inset Quotes eld
+\end_inset
+
+Bibtex generated bibliography
+\begin_inset Quotes erd
+\end_inset
+
+ template at the end of this article.
+ The references can then be cited in the text of the article.
+ I will cite two references here that will automatically get sorted and
+ listed at the end in the references section.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lp3w"
+literal "false"
+
+\end_inset
+
+ is an arbitrary book reference and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LM741"
+literal "false"
+
+\end_inset
+
+ is a reference to the data sheet of LM 741 op-amp.
+\end_layout
+
+\begin_layout Standard
+.
+ 
+\end_layout
+
+\begin_layout Section
+Tasks
+\end_layout
+
+\begin_layout Standard
+Every experiment will consist of several tasks starting from task-1 to task-n.
+ Something that is common to every experiment is the circuit diagram.
+ Draw the circuit diagram and explain its operation.
+ Use a vector graphics program like inkscape to draw the figures and circuit.
+ Do not cut and paste figures from any sources or references.
+ Another nice package that you may use is gEDA (gnu Electronics Design and
+ Automation).
+ Within this package, there is a software called 
+\begin_inset Quotes eld
+\end_inset
+
+gschem
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This can be used effectively to draw neat circuits.
+ This is actually a frontend for ngSpice simulation software and also for
+ 
+\begin_inset Quotes eld
+\end_inset
+
+pcb
+\begin_inset Quotes erd
+\end_inset
+
+ which is used to make printed circuit boards.
+\end_layout
+
+\begin_layout Subsection*
+Task-1
+\end_layout
+
+\begin_layout Standard
+The first task is to design the experimental circuit.
+ Choose the op amp.
+ Download the data sheet and study the various parameters.
+ Write the design equations as a script file in either OCTAVE or MATLAB
+ environment.
+ Obtain the values of the components.
+ Find out the input-output relationship under ideal op-amp consideration
+ and also for practical op-amp consideration.
+\end_layout
+
+\begin_layout Subsection*
+Task-2
+\end_layout
+
+\begin_layout Standard
+You may also consolidate the experiment with simulation results too.
+ You can use NgSpice, LTSpice, PSpice, Simscape, octave, etc.
+ for simulating the circuits.
+ Present the results in the form of tabulations and plots.
+ I have shown few examples of introducing figures into the article for relevant
+ tasks.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure1.png
+	lyxscale 25
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:label1"
+
+\end_inset
+
+Caption for figure having label as label1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task-3
+\end_layout
+
+\begin_layout Standard
+Always note that every figure should also be cited in the text.
+ For example, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:label1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ if the citation of figure 1.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:label2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is the citation for figure 2 and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:table1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ cites the tabulation table 1.
+\end_layout
+
+\begin_layout Standard
+Every figure should have a figure caption.
+ Scale the figure to fit properly within the column width of the double
+ column format lab report.
+ Use as many figures as possible to clarify the experiment.
+ Presentation of results in graphical form alongwith associated textual
+ discussion is more preferred than only textual discussion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure2.png
+	lyxscale 25
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:label2"
+
+\end_inset
+
+This is caption for figure having label as label2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Task-n
+\end_layout
+
+\begin_layout Standard
+Each experiment may have different number of tasks.
+ Perform all the tasks.
+ Tabulate the results before plotting.
+ I have indicated an example of tabulation.
+ Give the tabulation a table number and a table caption.
+ Kindly also cite the table in the textual discussion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sl.
+ No.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+param-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+param-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+%result
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1e-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5e-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10e-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20e-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size normal
+50e-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:table1"
+
+\end_inset
+
+Caption for table with label as table1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figure3.png
+	lyxscale 25
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:label3"
+
+\end_inset
+
+(a) Caption for part-a of figure (b) Caption for part-b of figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+In most cases, the experimental results will not match theoretical calculations.
+ This sections addresses this by discussion on these mismatches.
+ This is a very important section.
+ It provides an insight into the authors' thought flow.
+ Note that this section is not merely a summary of the entire article.
+ It discusses the experiment from the angle of practicalities and uncertainities.
+ As there are no ideal situations in practical realisations, the authors
+ should discuss on aspects where the result is not as expected by theory.
+ In what ways the short comings in the theory can be addressed? What are
+ the possible solutions? Brainstorming is an essential component of this
+ section.
+ The authors can also put forth comparisons based on similar circuits, simulatio
+n results and discussions in literature to consolidate the results that
+ have been obtained in this experiment.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "report"
+options "unsrt"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

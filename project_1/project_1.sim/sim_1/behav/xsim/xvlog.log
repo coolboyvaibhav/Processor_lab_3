@@ -1,0 +1,56 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.gen/sources_1/ip/blk_mem_gen_3/sim/blk_mem_gen_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.gen/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/BRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Branch_evaluation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Branch_evaluation
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/CPU_Wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_Wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Data_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/FF_Res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_Res
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/FF_Res_EN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FF_Res_EN
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Forwarding_unit_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forwarding_unit_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Imm_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Reg_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Seven_seg_cont.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seven_seg_cont
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/Stalling_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Stalling_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/load_hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_hw
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/mux_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/mux_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sources_1/new/store_hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module store_hw
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.srcs/sim_1/new/CPU_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/MTECH/sem-3/PSD/current_material/assignments/assignment_3/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

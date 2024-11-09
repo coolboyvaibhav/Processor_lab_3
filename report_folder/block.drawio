@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
+  <diagram name="Page-1" id="yMaces776M9a78liaoxB">
+    <mxGraphModel dx="1000" dy="530" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-2" value="" style="swimlane;startSize=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="387" y="185" width="110.5" height="110" as="geometry">
+            <mxRectangle x="436" y="190" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-8" value="Motor drive circuit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-2">
+          <mxGeometry x="-4.5" y="38" width="113" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P-vTZ5l1iMkF_1fgMbj1-4" target="P-vTZ5l1iMkF_1fgMbj1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-4" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="694" y="188" width="104" height="104" as="geometry">
+            <mxRectangle x="650" y="188" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-10" value="Buffer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-4">
+          <mxGeometry x="25" y="35" width="50" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-6" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="544" y="186" width="100" height="108" as="geometry">
+            <mxRectangle x="544" y="186" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-9" value="Voltage divider" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-6">
+          <mxGeometry x="3" y="37" width="97" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-7" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="188" width="118" height="104" as="geometry">
+            <mxRectangle x="650" y="188" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-11" value="Differential amplifier" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-7">
+          <mxGeometry x="-6" y="39" width="124" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-12" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="999" y="187" width="118" height="104" as="geometry">
+            <mxRectangle x="650" y="188" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-13" value="Sallen key filter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-12">
+          <mxGeometry x="6" y="40" width="99" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P-vTZ5l1iMkF_1fgMbj1-8" target="P-vTZ5l1iMkF_1fgMbj1-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P-vTZ5l1iMkF_1fgMbj1-9" target="P-vTZ5l1iMkF_1fgMbj1-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P-vTZ5l1iMkF_1fgMbj1-11" target="P-vTZ5l1iMkF_1fgMbj1-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-32" value="" style="swimlane;startSize=0;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="74" y="425" width="110.5" height="110" as="geometry">
+            <mxRectangle x="436" y="190" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-33" value="Motor drive circuit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#BADAFF;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-32">
+          <mxGeometry x="-2.5" y="38" width="113" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="P-vTZ5l1iMkF_1fgMbj1-35" target="P-vTZ5l1iMkF_1fgMbj1-40" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-35" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="381" y="428" width="104" height="104" as="geometry">
+            <mxRectangle x="650" y="188" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-36" value="Buffer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#BADAFF;fillColor=#BADAFF;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-35">
+          <mxGeometry x="25" y="35" width="50" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-37" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="231" y="426" width="100" height="108" as="geometry">
+            <mxRectangle x="544" y="186" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-38" value="Voltage divider" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#BADAFF;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-37">
+          <mxGeometry x="3" y="37" width="97" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-39" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="537" y="428" width="118" height="104" as="geometry">
+            <mxRectangle x="650" y="188" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-40" value="Differential amplifier" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#BADAFF;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-39">
+          <mxGeometry y="38" width="124" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P-vTZ5l1iMkF_1fgMbj1-41" target="P-vTZ5l1iMkF_1fgMbj1-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-41" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="686" y="427" width="118" height="104" as="geometry">
+            <mxRectangle x="650" y="188" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-42" value="Sallen key filter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#BADAFF;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-41">
+          <mxGeometry x="6" y="40" width="99" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="P-vTZ5l1iMkF_1fgMbj1-33" target="P-vTZ5l1iMkF_1fgMbj1-38" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="P-vTZ5l1iMkF_1fgMbj1-38" target="P-vTZ5l1iMkF_1fgMbj1-36" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="P-vTZ5l1iMkF_1fgMbj1-40" target="P-vTZ5l1iMkF_1fgMbj1-42" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-46" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="884" y="427" width="118" height="104" as="geometry">
+            <mxRectangle x="650" y="188" width="50" height="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P-vTZ5l1iMkF_1fgMbj1-47" value="TIVA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#BADAFF;" vertex="1" parent="P-vTZ5l1iMkF_1fgMbj1-46">
+          <mxGeometry x="34" y="40" width="44" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

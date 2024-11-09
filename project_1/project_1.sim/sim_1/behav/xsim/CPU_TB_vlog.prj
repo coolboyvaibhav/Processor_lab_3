@@ -1,0 +1,35 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_3/sim/blk_mem_gen_3.v" \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v" \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../project_1.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../project_1.srcs/sources_1/new/ALU.v" \
+"../../../../project_1.srcs/sources_1/new/ALU_Decoder.v" \
+"../../../../project_1.srcs/sources_1/new/Adder.v" \
+"../../../../project_1.srcs/sources_1/new/BRAM.v" \
+"../../../../project_1.srcs/sources_1/new/Branch_evaluation.v" \
+"../../../../project_1.srcs/sources_1/new/CPU.v" \
+"../../../../project_1.srcs/sources_1/new/CPU_Wrapper.v" \
+"../../../../project_1.srcs/sources_1/new/Controller.v" \
+"../../../../project_1.srcs/sources_1/new/Data_memory.v" \
+"../../../../project_1.srcs/sources_1/new/FF_Res.v" \
+"../../../../project_1.srcs/sources_1/new/FF_Res_EN.v" \
+"../../../../project_1.srcs/sources_1/new/Forwarding_unit_2.v" \
+"../../../../project_1.srcs/sources_1/new/Imm_gen.v" \
+"../../../../project_1.srcs/sources_1/new/Reg_file.v" \
+"../../../../project_1.srcs/sources_1/new/Seven_seg_cont.v" \
+"../../../../project_1.srcs/sources_1/new/Shifter.v" \
+"../../../../project_1.srcs/sources_1/new/Stalling_unit.v" \
+"../../../../project_1.srcs/sources_1/new/load_hw.v" \
+"../../../../project_1.srcs/sources_1/new/mux_2.v" \
+"../../../../project_1.srcs/sources_1/new/mux_4.v" \
+"../../../../project_1.srcs/sources_1/new/store_hw.v" \
+"../../../../project_1.srcs/sim_1/new/CPU_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
