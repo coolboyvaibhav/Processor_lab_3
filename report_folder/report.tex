@@ -1288,6 +1288,42 @@ The following table summarizes the conditions for stalling and halting, with the
 	\caption{\label{fig:FSM_cache} FSM of cache}
 \end{figure}
 
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\linewidth]{img/timing_cache}
+	\caption{\label{fig:timing_cache} timing cache}
+\end{figure}
+\subsection{Rules for Cache Line Update}
+
+\begin{enumerate}
+	\item If neither line contains valid data, update line 0.
+	\item If only one line contains valid data, update the line with invalid data.
+	\item If both lines contain valid data, update the line that was least recently accessed. The "used" bit indicates recent access: $u = 0$ means the line was least recently used, while $u = 1$ means it was recently used.
+\end{enumerate}
+
+\subsection{Cache Operation Scenarios}
+
+\textbf{Scenario 1: Instruction Hit}
+\begin{enumerate}
+	\item The set number and tag are extracted from the program counter (PC).
+	\item The tags of both lines are compared with the extracted tag, and the valid bits are checked to determine if the lines have valid entries.
+	\item If one of the lines contains the required instruction, the check results in a hit.
+	\item The instruction is then passed through the stall multiplexer to the input of the IF/ID pipeline register.
+\end{enumerate}
+
+\textbf{Scenario 2: Instruction Miss}
+\begin{enumerate}
+	\item The set number and tag are extracted from the PC.
+	\item The tags of both lines are compared with the extracted tag, and the valid bits are checked to determine if the lines have valid entries.
+	\item If no line contains the required instruction, the check results in a miss. The $\text{PC\_CE\_Icache}$ signal is deasserted, and $\text{Stall\_Icache}$ is asserted.
+	\item A NOP instruction is passed to the Decode and further stages. Meanwhile, the cache prepares to fetch the words from memory.
+	\item The $\text{imem\_rd}$ signal is asserted, enabling the instruction word to be read. Over 4 consecutive cycles, 4 words (including the required word and three additional words to form a complete cache line) are shifted into a 128-bit shift register.
+	\item After all 4 words are shifted in, the data becomes available at the cache input in the next cycle.
+	\item The appropriate signals to write to the cache are asserted, allowing the data to be written at the next clock edge.
+	\item The check from step 2 is repeated, resulting in a hit this time.
+	\item The instruction is passed through the stall multiplexer to the input of the IF/ID pipeline register.
+\end{enumerate}
+
 \section{Testing:}
 \begin{figure}[!htbp]
 	\centering
