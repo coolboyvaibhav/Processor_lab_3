@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.24)  10 NOV 2024 08:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.24)  10 NOV 2024 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,116 +1304,129 @@ File: img/FSM_cache.png Graphic file (type png)
 <use img/FSM_cache.png>
 Package pdftex.def Info: img/FSM_cache.png  used on input line 1287.
 (pdftex.def)             Requested size: 452.9679pt x 350.9857pt.
+<img/timing_cache.png, id=54, 1908.12875pt x 1488.56125pt>
+File: img/timing_cache.png Graphic file (type png)
+<use img/timing_cache.png>
+Package pdftex.def Info: img/timing_cache.png  used on input line 1293.
+(pdftex.def)             Requested size: 452.9679pt x 353.35527pt.
 
 Typesetting DESEpub Logo ...
 File: publogo.png Graphic file (type png)
 <use publogo.png>
-Package pdftex.def Info: publogo.png  used on input line 1291.
+Package pdftex.def Info: publogo.png  used on input line 1300.
 (pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
  ... done
 [11 <./img/instru_cache.png>]
 Typesetting DESEpub Logo ...
 File: publogo.png Graphic file (type png)
 <use publogo.png>
-Package pdftex.def Info: publogo.png  used on input line 1291.
+Package pdftex.def Info: publogo.png  used on input line 1300.
 (pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
  ... done
 [12 <./img/FSM_cache.png>]
-<img/c_prog_gcd.png, id=62, 975.645pt x 495.65175pt>
+Typesetting DESEpub Logo ...
+File: publogo.png Graphic file (type png)
+<use publogo.png>
+Package pdftex.def Info: publogo.png  used on input line 1300.
+(pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
+ ... done
+[13 <./img/timing_cache.png>]
+<img/c_prog_gcd.png, id=68, 975.645pt x 495.65175pt>
 File: img/c_prog_gcd.png Graphic file (type png)
 <use img/c_prog_gcd.png>
-Package pdftex.def Info: img/c_prog_gcd.png  used on input line 1294.
+Package pdftex.def Info: img/c_prog_gcd.png  used on input line 1330.
 (pdftex.def)             Requested size: 452.9679pt x 230.12021pt.
-<img/c_code_to_assembly_code.png, id=63, 1150.2975pt x 554.07pt>
+<img/c_code_to_assembly_code.png, id=69, 1150.2975pt x 554.07pt>
 File: img/c_code_to_assembly_code.png Graphic file (type png)
 <use img/c_code_to_assembly_code.png>
 Package pdftex.def Info: img/c_code_to_assembly_code.png  used on input line 13
-00.
+36.
 (pdftex.def)             Requested size: 452.9679pt x 218.18312pt.
-<img/assembly_code_to_machine_code.png, id=64, 832.3095pt x 296.307pt>
+<img/assembly_code_to_machine_code.png, id=70, 832.3095pt x 296.307pt>
 File: img/assembly_code_to_machine_code.png Graphic file (type png)
 <use img/assembly_code_to_machine_code.png>
 Package pdftex.def Info: img/assembly_code_to_machine_code.png  used on input l
-ine 1306.
+ine 1342.
 (pdftex.def)             Requested size: 452.9679pt x 161.2603pt.
 
-Overfull \hbox (38.82338pt too wide) in paragraph at lines 1314--1329
-[][] 
+Overfull \hbox (23.82338pt too wide) in paragraph at lines 1350--1365
+[] 
  []
 
 Typesetting DESEpub Logo ...
 File: publogo.png Graphic file (type png)
 <use publogo.png>
-Package pdftex.def Info: publogo.png  used on input line 1331.
+Package pdftex.def Info: publogo.png  used on input line 1367.
 (pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
  ... done
-[13 <./img/c_prog_gcd.png> <./img/c_code_to_assembly_code.png>]
-<img/rtl.png, id=71, 757.02824pt x 289.68225pt>
+[14]
+Typesetting DESEpub Logo ...
+File: publogo.png Graphic file (type png)
+<use publogo.png>
+Package pdftex.def Info: publogo.png  used on input line 1367.
+(pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
+ ... done
+[15 <./img/c_prog_gcd.png> <./img/c_code_to_assembly_code.png> <./img/assembly_
+code_to_machine_code.png>]
+<img/rtl.png, id=80, 757.02824pt x 289.68225pt>
 File: img/rtl.png Graphic file (type png)
 <use img/rtl.png>
-Package pdftex.def Info: img/rtl.png  used on input line 1337.
+Package pdftex.def Info: img/rtl.png  used on input line 1373.
 (pdftex.def)             Requested size: 452.9679pt x 173.3333pt.
-<img/dp_with_mem.png, id=72, 487.8225pt x 278.84175pt>
+<img/dp_with_mem.png, id=81, 487.8225pt x 278.84175pt>
 File: img/dp_with_mem.png Graphic file (type png)
 <use img/dp_with_mem.png>
-Package pdftex.def Info: img/dp_with_mem.png  used on input line 1343.
+Package pdftex.def Info: img/dp_with_mem.png  used on input line 1379.
 (pdftex.def)             Requested size: 452.9679pt x 258.92018pt.
-<img/beh_sim.png, id=73, 977.45175pt x 340.27126pt>
+<img/beh_sim.png, id=82, 977.45175pt x 340.27126pt>
 File: img/beh_sim.png Graphic file (type png)
 <use img/beh_sim.png>
-Package pdftex.def Info: img/beh_sim.png  used on input line 1350.
+Package pdftex.def Info: img/beh_sim.png  used on input line 1386.
 (pdftex.def)             Requested size: 452.9679pt x 157.68451pt.
-<img/post_imp.png, id=74, 977.45175pt x 525.162pt>
+<img/post_imp.png, id=83, 977.45175pt x 525.162pt>
 File: img/post_imp.png Graphic file (type png)
 <use img/post_imp.png>
-Package pdftex.def Info: img/post_imp.png  used on input line 1357.
+Package pdftex.def Info: img/post_imp.png  used on input line 1393.
 (pdftex.def)             Requested size: 452.9679pt x 243.36443pt.
-<img/utilization.png, id=75, 986.4855pt x 142.131pt>
+
+Typesetting DESEpub Logo ...
+File: publogo.png Graphic file (type png)
+<use publogo.png>
+Package pdftex.def Info: publogo.png  used on input line 1395.
+(pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
+ ... done
+[16 <./img/rtl.png> <./img/dp_with_mem.png>]
+<img/utilization.png, id=89, 986.4855pt x 142.131pt>
 File: img/utilization.png Graphic file (type png)
 <use img/utilization.png>
-Package pdftex.def Info: img/utilization.png  used on input line 1364.
+Package pdftex.def Info: img/utilization.png  used on input line 1400.
 (pdftex.def)             Requested size: 452.96095pt x 90.59482pt.
-<img/timing.png, id=76, 973.83826pt x 242.70676pt>
+<img/timing.png, id=90, 973.83826pt x 242.70676pt>
 File: img/timing.png Graphic file (type png)
 <use img/timing.png>
-Package pdftex.def Info: img/timing.png  used on input line 1379.
+Package pdftex.def Info: img/timing.png  used on input line 1415.
 (pdftex.def)             Requested size: 452.9787pt x 90.5926pt.
 
 Typesetting DESEpub Logo ...
 File: publogo.png Graphic file (type png)
 <use publogo.png>
-Package pdftex.def Info: publogo.png  used on input line 1385.
+Package pdftex.def Info: publogo.png  used on input line 1427.
 (pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
  ... done
-[14 <./img/assembly_code_to_machine_code.png> <./img/rtl.png>]
-Typesetting DESEpub Logo ...
-File: publogo.png Graphic file (type png)
-<use publogo.png>
-Package pdftex.def Info: publogo.png  used on input line 1385.
-(pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
- ... done
-[15 <./img/dp_with_mem.png> <./img/beh_sim.png>]
-Typesetting DESEpub Logo ...
-File: publogo.png Graphic file (type png)
-<use publogo.png>
-Package pdftex.def Info: publogo.png  used on input line 1385.
-(pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
- ... done
-[16 <./img/post_imp.png> <./img/utilization.png> <./img/timing.png>]
-<img/power.png, id=93, 975.645pt x 362.5545pt>
+[17 <./img/beh_sim.png> <./img/post_imp.png>]
+<img/power.png, id=96, 975.645pt x 362.5545pt>
 File: img/power.png Graphic file (type png)
 <use img/power.png>
-Package pdftex.def Info: img/power.png  used on input line 1399.
+Package pdftex.def Info: img/power.png  used on input line 1435.
 (pdftex.def)             Requested size: 452.9679pt x 168.32608pt.
-
-AED: lastpage setting LastPage
+ AED: lastpage setting LastPage
 Typesetting DESEpub Logo ...
 File: publogo.png Graphic file (type png)
 <use publogo.png>
-Package pdftex.def Info: publogo.png  used on input line 1626.
+Package pdftex.def Info: publogo.png  used on input line 1662.
 (pdftex.def)             Requested size: 55.40741pt x 32.28082pt.
  ... done
-[17 <./img/power.png>] (report.aux)
+[18 <./img/utilization.png> <./img/timing.png> <./img/power.png>] (report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1427,10 +1440,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21403 strings out of 474486
- 426483 string characters out of 5743755
+ 21415 strings out of 474486
+ 426785 string characters out of 5743755
  1965542 words of memory out of 5000000
- 43219 multiletter control sequences out of 15000+600000
+ 43231 multiletter control sequences out of 15000+600000
  600673 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,18n,93p,631b,502s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1444,9 +1457,9 @@ ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/vaibh/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/vaibh/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/vaibh/AppData/Local/Prog
 rams/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (17 pages, 1409634 bytes).
+Output written on report.pdf (18 pages, 1479227 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
