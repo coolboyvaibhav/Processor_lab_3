@@ -26,8 +26,9 @@
 \usepackage{geometry}
 \usepackage{adjustbox}
 \usepackage{tikz}
-
+\usepackage{float}
 \usetikzlibrary{shapes.geometric, arrows}
+\usepackage{svg}
 
 \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
 \tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
@@ -650,8 +651,10 @@ The following table lists the opcode values for different instructions:
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{img/cpu_level_1}
-	\caption{\label{fig:label2} CPU Level 1 diagram}
+	\caption{\label{fig:label2} block diagram}
 \end{figure}
+
+
 \subsection{Instruction Memory}
 
 \noindent
@@ -987,7 +990,7 @@ The control signals `sw`, `sh`, and `sb` select the appropriate write enable sig
 	\hline
 \end{tabular}
 
-\subsubsection{Load Hardware}
+\subsection{Load Hardware}
 
 \noindent
 The load hardware is situated in the Write-Back (WB) stage of the pipeline, as opposed to the MEM stage used for store hardware. This positioning is due to the synchronous read nature of the Distributed RAM  used in the implementation. Consequently, all control signals for load operations are delayed until the WB stage.
@@ -1095,6 +1098,195 @@ LBU & 1 & 1 & 0 & 0 & 0 & 0 & 1 & \{24\{0\}, Data[31:24]\} \\
 %	\draw [arrow] (data0) -- (end);
 %	
 %\end{tikzpicture}
+
+\section{Forwarding Unit}
+
+
+\noindent
+The forwarding unit generates appropriate control signals to forward data from subsequent stages to the input of the EX/MEM stages in case of a data hazard.
+
+\noindent
+\textbf{FA/FB Forwarding} control signals are as follows:
+
+\begin{longtable}{|c|c|}
+	\hline
+	\textbf{FA/FB } & \textbf{Description} \\
+	\hline
+	\endfirsthead
+	\hline
+	\textbf{FA/FB } & \textbf{Description} \\
+	\hline
+	\endhead
+	\hline
+	\endfoot
+	\hline
+	\endlastfoot
+	\hline
+	00 & Input taken from IF\_ID pipeline register (No forwarding) \\
+	\hline
+	01 & Input taken from WB\_FIN pipeline register \\
+	\hline
+	10 & Input taken from MEM\_WB pipeline register \\
+	\hline
+	11 & Input taken from EX\_MEM pipeline register \\
+	\hline
+\end{longtable}
+
+\noindent
+In the case where a load is followed by a store instruction, where \texttt{STORE.Rs2} = \texttt{LOAD.Rd}, forwarding needs to be done from the MEM\_WB pipeline register to the write data port of the data memory. The control signal \texttt{FS} facilitates this.
+\section{Stalling and Halting Unit}
+
+\noindent
+The stalling and halting unit generates appropriate control signals to stall or halt execution.
+
+\noindent
+In case of a LOAD instruction followed by a dependent instruction, only forwarding will not suffice. A 1-stall cycle needs to be introduced.
+
+\noindent
+In case the branching condition is satisfied, 1 stall cycle and 1 NOP instruction need to be introduced into the pipeline.
+
+\noindent
+The following table summarizes the conditions for stalling and halting, with the associated control signals.
+
+\begin{longtable}{|c|c|c|p{5cm}|c|c|c|c|c|}
+	\hline
+	\textbf{Hazard} & \textbf{PCSrc} & \textbf{Halt} & \textbf{dmr \&\& ((IF/ID.RS1==ID/EX.Rd) or (IF/ID.RS2==ID/EX.Rd))} & \textbf{Stall} & \textbf{Discont} & \textbf{PC\_CE} & \textbf{IF\_ID\_CE} \\
+	\hline
+	Data & 0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+	\hline
+	Control & 1 & 0 & 0 & 1 & 1 & 1 & 1 \\
+	\hline
+	- & 0 & 1 & 0 & 0 & 0 & 1 & 1 \\
+	\hline
+\end{longtable}
+
+
+\section{Instruction Cache}
+
+\subsection*{Blocks and Specifications:}
+
+\begin{enumerate}
+	\item \textbf{Instruction Memory (Block RAM)}
+	\begin{itemize}
+		\item Size: 256 words (1 kB)
+		\item Address bits: \( \log_2 256 = 8 \)
+		\item Since addresses are multiples of 4, the 2 least significant bits of the PC are always 0.
+		\item PC[9:2] are used to index into the main memory.
+	\end{itemize}
+	
+	\item \textbf{Instruction Cache Memory}
+	\begin{itemize}
+		\item Size: 32 words
+		\item Associativity: 2-way set associative
+		\item Block/line size: 4 words
+		\item Number of lines: \( \frac{32}{4} = 8 \)
+		\item Number of sets: \( \frac{8}{2} = 4 \)
+	\end{itemize}
+	
+	\item \textbf{Instruction Tag RAM}
+	\begin{itemize}
+		\item Locations: 8 (same as the number of lines)
+		\item Each line contains used, valid, and tag bits:
+		\begin{itemize}
+			\item USED (1 bit)
+			\item VALID (1 bit)
+			\item TAG (4 bits)
+		\end{itemize}
+	\end{itemize}
+	
+	\item \textbf{Cache Controller}
+	\begin{itemize}
+		\item Issues control signals to manage cache hits and misses.
+	\end{itemize}
+	
+	\item \textbf{Shift Register}
+	\begin{itemize}
+		\item Size: 4 words (128 bits)
+		\item Words are shifted into this register one at a time until the entire line is filled.
+	\end{itemize}
+	
+	\item \textbf{Counter Block}
+	\begin{itemize}
+		\item Size: 3 bits (8 counts)
+		\item Counts cycles and issues control signals to the cache controller to update the cache in a fixed number of cycles.
+	\end{itemize}
+	
+	\item \textbf{Hit Circuitry}
+	\begin{itemize}
+		\item Determines if an instruction is a hit or miss:
+		\begin{itemize}
+			\item If \((\text{tag}_0 = \text{tag} \text{ and } v_0 = 1)\) then \textbf{Hit}
+			\item Else if \((\text{tag}_1 = \text{tag} \text{ and } v_1 = 1)\) then \textbf{Hit}
+			\item Else \textbf{Miss}
+		\end{itemize}
+	\end{itemize}
+	
+	\item \textbf{Word MUX}
+	\begin{itemize}
+		\item Selects the required word from the 4 words in the cache line based on PC[3:2].
+	\end{itemize}
+\end{enumerate}
+
+\noindent The physical address is split as follows:
+
+%\begin{center}
+%	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+%		\hline
+%		7 & \multicolumn{3}{c|}{\textbf{TAG}} & 3 & \multicolumn{2}{c|}{\textbf{SET}} & 2 & 1 & \textbf{Block Offset} \\
+%		\hline
+%	\end{tabular}
+%\end{center}
+\noindent \texttt{7 [TAG] 4 || 3 [SET] 2 || 1 [Block offset] 0}
+%\begin{table}[h!]
+%	\centering
+%	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+%		\hline
+%		\textcolor{blue}{7} & \multicolumn{3}{c|}{\textbf{TAG}} & \textcolor{blue}{4} & \textcolor{blue}{3} & \textbf{SET} & \textcolor{blue}{2} & \textcolor{blue}{1} & \textbf{Block offset} \textcolor{blue}{0} \\
+%		\hline
+%	\end{tabular}
+%\end{table}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[height=0.4\linewidth,width=0.4\linewidth]{img/instru_cache}
+	\caption{\label{fig:instru_cache} Level 0 of Instruction cache}
+\end{figure}
+
+\subsection{Instruction Cache Controller FSM}
+
+\begin{itemize}
+	\item \textbf{TAG COMPARE}: The incoming address is decomposed into a set number and a tag. The set number indexes both banks of the instruction cache memory and both banks of the instruction tag RAM. A cache hit occurs if the tags match and the cache line is valid; otherwise, it results in a miss. In this state, it is determined if there is a cache miss or hit.
+	
+	\item \textbf{READ IMEM}: This state prepares the FSM to read the missed line from the instruction memory in a fixed number of clock cycles by resetting the counter.
+	
+	\item \textbf{WAIT IMEM}: The missed line is read from the instruction memory word by word over 4 clock cycles. In this state, the controller waits for the memory operation to complete and for the instruction to be available at the cache input.
+	
+	\item \textbf{UPDATE CACHE}: The control signals required to write to the cache are set in this state. These control signals are configured based on which cache line is to be updated.
+\end{itemize}
+\subsection{Cache Controller Outputs}
+
+\begin{itemize}
+	\item \textbf{PC\_CE\_Icache}: When deasserted, it disables the PC from incrementing, allowing the processor to wait until the required instruction is brought into the cache.
+	
+	\item \textbf{Stall\_Icache}: When asserted, this signal introduces NOP instructions into the Decode stage, ensuring that no operation is performed until the required instruction is fetched into the cache.
+	
+	\item \textbf{Imem\_rd}: Connected to the enable pin of the Block RAM (BRAM). When asserted, data can be read from the BRAM.
+	
+	\item \textbf{next\_u0, next\_u1}: These are the updated values of the "used" bits for both lines in the selected set. They are written to the Instruction Tag RAM whenever a cache line is updated.
+	
+	\item \textbf{next\_v0, next\_v1}: These are the updated values of the "valid" bits for both lines in the selected set. They are written to the Instruction Tag RAM whenever a cache line is updated.
+	
+	\item \textbf{we\_t0, we\_t1}: These signals are asserted to enable writing to the Instruction Tag RAM. Both signals must be asserted on a cache miss.
+	
+	\item \textbf{we\_I0, we\_I1}: These signals enable writing to the Instruction Cache memory. The specific signal corresponding to the line that needs to be updated within the set should be asserted.
+	
+	\item \textbf{next\_tag0, next\_tag1}: These are the updated values of the tag bits for the line to be updated in the selected set. They are written to the Instruction Tag RAM whenever a cache line is updated.
+\end{itemize}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\linewidth]{img/FSM_cache}
+	\caption{\label{fig:FSM_cache} FSM of cache}
+\end{figure}
 
 \section{Testing:}
 \begin{figure}[!htbp]
